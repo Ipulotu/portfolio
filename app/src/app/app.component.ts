@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  year = (new Date).getFullYear();
+  lastupdated = new Date(document.lastModified).toLocaleDateString("en-US");
+  
+
 }
