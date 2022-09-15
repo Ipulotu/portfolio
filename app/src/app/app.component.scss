@@ -33,6 +33,15 @@
     color: #125699;
   }
 
+#floating-nav{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+
   .circle-link {
     height: 40px;
     width: 40px;
@@ -64,11 +73,14 @@
     text-align: center;
     padding-bottom: 5px;
 
+    h3{
+      color: white;
+    }
 
     div {
       display: flex;
       justify-content: space-evenly;
-      width: clamp(269px, 50vw, 928px);
+      width: clamp(364px, 50vw, 928px);
     }
   }
   
@@ -90,8 +102,9 @@
     #contact-box{
       margin: auto;
     }
+
   }
 
 
-
+  
 
