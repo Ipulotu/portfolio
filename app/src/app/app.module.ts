@@ -7,6 +7,7 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProjectPageComponent } from './components/project-page/project-page.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     ContactPageComponent,
     HomePageComponent,
+    ProjectPageComponent,
   ],
   imports: [
     BrowserModule,
