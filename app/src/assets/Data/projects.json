@@ -1,0 +1,44 @@
+{ 
+    "0":{
+        "name":"BeaumontWard.ca",
+        "imagePath1":"assets/images/BWP.webp",
+        "imagePath2":"",
+        "imagePath3":"",
+        "summary":"",
+        "descriptions":"",
+        "gitUrl":"",
+        "liveUrl":"https://beaumontward.ca/"
+    },
+    "1":{
+        "name":"DnD Spellbook",
+        "imagePath1":"",
+        "imagePath2":"",
+        "imagePath3":"",
+        "summary":"",
+        "descriptions":"",
+        "gitUrl":"https://github.com/Ipulotu/wdd330/tree/main/challage/D%26D",
+        "liveUrl":"https://ipulotu.github.io/wdd330/challage/D&D/index.html"
+    },
+    "2":{
+        "name":"Beaumont Chamber of Commerce",
+        "imagePath1":"",
+        "imagePath2":"",
+        "imagePath3":"",
+        "summary":"",
+        "descriptions":"",
+        "gitUrl":"https://github.com/Ipulotu/wdd230/tree/main/lesson9/chamber",
+        "liveUrl":"https://ipulotu.github.io/wdd230/lesson11/chamber/index.html"
+    },
+    "3":{
+        "name":"MongoAPI",
+        "imagePath1":"",
+        "imagePath2":"",
+        "imagePath3":"",
+        "summary":"",
+        "descriptions":"",
+        "gitUrl":"",
+        "liveUrl":""
+    }
+}
+
+

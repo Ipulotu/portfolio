@@ -1,13 +1,4 @@
-
-<div class="content">
-    <app-project-card  
-        *ngFor="let project of projects" 
-        [project]="project">
-    </app-project-card  >
-</div>
-
-
-<!-- <div class="card" style="width: 18rem;">
+<div class="card" style="width: 18rem;">
     <div class="card-body">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -17,13 +8,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/images/BWP.webp" class="d-block w-100" alt="...">
+                <img src={{project.imagePath1}} class="d-block w-100" alt={{project.name}}>
               </div>
               <div class="carousel-item">
-                <img src="assets/images/BWP.webp" class="d-block w-100" alt="...">
+                <img src={{project.imagePath2}} class="d-block w-100" alt={{project.name}}>
               </div>
               <div class="carousel-item">
-                <img src="assets/images/BWP.webp" class="d-block w-100" alt="...">
+                <img src={{project.imagePath3}} class="d-block w-100" alt={{project.name}}>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -35,8 +26,12 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <h5 class="card-title">Beaumontward.ca</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="https://beaumontward.ca/" target="_blank" class="btn btn-primary">Live site</a>
+        <h5 class="card-title">{{project.name}}</h5>
+        <p class="card-text">{{project.summary}}</p>
+        <a href={{project.liveUrl}} target="_blank" class="btn btn-primary">Live site</a>
+        <div *ngIf="checkForGit()">
+          <a href={{project.gitUrl}} target="_blank" class="btn btn-primary">Live site</a>
+        </div>
+        
     </div>
-</div> -->
+</div>
