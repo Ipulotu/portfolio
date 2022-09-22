@@ -12,18 +12,18 @@ export class ProjectPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.getProjects()
   }
 
 
   async getProjects(){
-    let data = await this.getJSON("https://ipulotu.github.io/portfolio/app/src/assets/Data/projects.js");  
-    
-    for(let i = 0; i < 4; i++){
-      this.projects.push(data[i])
+    let projects = [];
+    let data = await this.getJSON("https://ipulotu.github.io/portfolio/app/src/assets/Data/projects.json");  
+    for(let i = 0; i <= 3; i++){
+      projects.push(data[i])
     }
-    
+    this.projects = projects ;
   }
-
 
   getJSON(url: string) {
     return fetch(url)
