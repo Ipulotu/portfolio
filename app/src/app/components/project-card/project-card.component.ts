@@ -8,10 +8,16 @@ import { Project } from '../../project';
 })
 export class ProjectCardComponent implements OnInit {
   @Input() project!: Project;
+  string: string ="";
+  idString: string = "";
+  // [attr.data-target]="'#'+ string"
+
 
   constructor() { }
 
   ngOnInit(): void {
+    this.string = `carouselExampleIndicators${this.project.id}`
+    this.idString = `#${this.string}`
     console.log("project card created")
   }
 
