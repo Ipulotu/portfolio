@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, ElementRef, ViewChild,} from '@angular/core';
 import { Project } from '../../project'; 
 
 @Component({
@@ -9,17 +9,26 @@ import { Project } from '../../project';
 export class ProjectCardComponent implements OnInit {
   @Input() project!: Project;
   string: string ="";
-  idString: string = "";
-  // [attr.data-target]="'#'+ string"
-
 
   constructor() { }
 
   ngOnInit(): void {
     this.string = `carouselExampleIndicators${this.project.id}`
-    this.idString = `#${this.string}`
-    console.log("project card created")
   }
+    
+  ngAfterViewInit(): void {
+    const bntPrev = document.querySelector( `#bnt-prev${this.project.id}`);
+    const bntNext = document.querySelector(`#bnt-next${this.project.id}`)
+    bntPrev!.setAttribute('data-bs-target', `#carouselExampleIndicators${this.project.id}`);
+    bntNext!.setAttribute('data-bs-target', `#carouselExampleIndicators${this.project.id}`);
+  
+  }
+
+
+
+
+
+
 
 
   checkForGit(){
