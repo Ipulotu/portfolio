@@ -19,7 +19,7 @@ export class ProjectPageComponent implements OnInit {
   async getProjects(){
     let projects = [];
     let data = await this.getJSON("https://ipulotu.github.io/portfolio/app/src/assets/Data/projects.json");  
-    for(let i = 0; i <= 3; i++){
+    for(let i = 0; i <= 4; i++){
       projects.push(data[i])
     }
     this.projects = projects ;

@@ -3,9 +3,19 @@
     display: flex;
     margin: 82px auto 32px;
     padding: 0 16px;
-    max-width: 960px;
-    flex-flow: wrap;
+    // max-width: 960px;
+    // flex-flow: wrap;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
   }
 
+  @media screen and (max-width: 767px) {
+
+  .content{
+    flex-direction: column;
+
+  }
+
+
+  }

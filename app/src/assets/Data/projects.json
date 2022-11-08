@@ -3,9 +3,9 @@
         "id":"0",
         "name":"BeaumontWard.ca",
         "imagePath1":"assets/images/BWP.webp",
-        "imagePath2":"",
+        "imagePath2":"assets/images/BWP1.webp",
         "imagePath3":"",
-        "summary":"",
+        "summary":"This site helps the members of locale church stay connected and up to date on events and activities. It also has links to many useful rescores.",
         "descriptions":"",
         "gitUrl":"",
         "liveUrl":"https://beaumontward.ca/"
@@ -16,7 +16,7 @@
         "imagePath1":"assets/images/D&D1.JPG",
         "imagePath2":"assets/images/D&D2.JPG",
         "imagePath3":"assets/images/D&D3.JPG",
-        "summary":"",
+        "summary":"A single page web application built with vanilla JavaScript connected to a D&D API. This application allows users create list of spells(spellbooks) which will be recorded to local storage. The D&D API provides the name of the spells as well as information about how the spell works.",
         "descriptions":"",
         "gitUrl":"https://github.com/Ipulotu/wdd330/tree/main/challage/D%26D",
         "liveUrl":"https://ipulotu.github.io/wdd330/challage/D&D/index.html"
@@ -27,20 +27,31 @@
         "imagePath1":"assets/images/COC1.JPG",
         "imagePath2":"assets/images/COC2.JPG",
         "imagePath3":"assets/images/COC3.JPG",
-        "summary":"",
+        "summary":"This mock site was designed for my frontend web development class. It is connected to a weather API & generates random business cards each time the page is loaded. The sites is dynamic and can accommodated phones, tablets, and desktop views.",
         "descriptions":"",
         "gitUrl":"https://github.com/Ipulotu/wdd230/tree/main/lesson9/chamber",
         "liveUrl":"https://ipulotu.github.io/wdd230/lesson11/chamber/index.html"
     },
     "3":{
         "id":"3",
-        "name":"MongoAPI",
-        "imagePath1":"",
-        "imagePath2":"",
-        "imagePath3":"",
-        "summary":"",
+        "name":"CookBook API",
+        "imagePath1":"assets/images/Mongodb1.JPG",
+        "imagePath2":"assets/images/Mongodb2.JPG",
+        "imagePath3":"assets/images/Mongodb3.JPG",
+        "summary":"A REST API built with Node & Express. It is documented with swagger, and is connected to a MongoDB Atlas. The API requires authorization by users who have google accounts. This is done with OAuth2 and is set up on Google Cloud Platform.",
         "descriptions":"",
-        "gitUrl":"",
+        "gitUrl":"https://github.com/Ipulotu/CES341/tree/main/CookBook-API",
+        "liveUrl":"https://ipulotu-cookbook.onrender.com"
+    },
+    "4":{
+        "id":"4",
+        "name":"Python games",
+        "imagePath1":"assets/images/DigDug.jpg",
+        "imagePath2":"assets/images/GREED.JPG",
+        "imagePath3":"assets/images/cycle.JPG",
+        "summary":"4 retro games that me and my team mates coded in python for our class 'programming with classes.' We have Cycle, Dig dug and more.",
+        "descriptions":"",
+        "gitUrl":"https://github.com/Ipulotu/python",
         "liveUrl":""
     }
 }
