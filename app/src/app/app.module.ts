@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProjectPageComponent } from './components/project-page/project-page.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { AboutMePageComponent } from './components/about-me-page/about-me-page.component';
+
 
 
 @NgModule({
@@ -18,6 +20,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
     HomePageComponent,
     ProjectPageComponent,
     ProjectCardComponent,
+    AboutMePageComponent
   ],
   imports: [
     BrowserModule,

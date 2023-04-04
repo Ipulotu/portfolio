@@ -22,22 +22,37 @@
 
 
 
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
+  // .content {
+  //   display: flex;
+  //   margin: 82px auto 32px;
+  //   padding: 0 16px;
+  //   max-width: 960px;
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+
+
+  .content{
+    margin-bottom: 120px;
   }
 
-
-
+.home-page-images{
+  max-width: 500px;
+  border:solid #86ba9c 1px;
+}
  
+.jumbotron{
+  color: white;
+  padding: 4rem 1rem 2rem ;
+  margin-bottom: 2rem;
+  background-image: url("../../../assets/images/labtop.jpg");
+  border-radius: 0.3rem;
+}
 
-  #clouds{
-    max-width: 99vw;
-  }
+#jumbotron-text{
+  text-shadow: 2px 2px #333;
+}
+
 
 
 
