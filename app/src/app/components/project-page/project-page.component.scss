@@ -8,14 +8,16 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
+    padding-bottom: 125px;
   }
 
-  @media screen and (max-width: 767px) {
+  // @media screen and (max-width: 767px) {
 
-  .content{
-    flex-direction: column;
+  // .content{
+  //   flex-direction: column;
 
-  }
+  // }
 
 
-  }
+  //}

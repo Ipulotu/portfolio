@@ -31,10 +31,32 @@
   //   align-items: center;
   // }
 
+#content{
+  padding-bottom: 125px;
+}
+  // .content{
+  //   // margin-bottom: 120px;
+    
+  // }
 
-  .content{
-    margin-bottom: 120px;
+
+// a {
+//   display: block;
+//   max-width: 500px;
+//   border:solid #86ba9c 1px;
+// }
+
+#homeA{
+  max-width: 416px;
+ 
+  
+  img{
+    max-width: 416px;
+   
   }
+}
+
+
 
 .home-page-images{
   max-width: 500px;
@@ -54,7 +76,13 @@
 }
 
 
+.link-image{
+  justify-self: center;
+}
 
+p{
+  font-size: large;
+}
 
 
   /* Responsive Styles */
@@ -75,20 +103,6 @@
       margin-left: 72px;
     }
 
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
   }
 
 
-
-
-  @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
-    }
-
-
-  }
