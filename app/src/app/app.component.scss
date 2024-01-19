@@ -40,11 +40,18 @@
   z-index: 2;
 }
 
+.nav-link:hover{
+  background-color: #1976d2;
+}
+
 
 #contact-box:hover {
   background-color: #1976d2;
   transition: 0.3s;
 }
+
+
+
 
 
 // ========== Footer ==============
@@ -109,6 +116,19 @@ footer{
     }
 
   }
+
+  // @media (min-width: 768px) {
+
+  //   #nav-container{
+  //     justify-content: space-between;
+  //   }
+
+  //   #bootstrap-overrides{
+  //     display: none;
+  //   }
+  
+  // }
+
 
 
   // Dark-theam 

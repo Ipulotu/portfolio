@@ -14,6 +14,7 @@ import { ProjectPageComponent } from './components/project-page/project-page.com
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { AboutMePageComponent } from './components/about-me-page/about-me-page.component';
 import { ResumePageComponent } from './components/resume-page/resume-page.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -38,7 +39,7 @@ import { ResumePageComponent } from './components/resume-page/resume-page.compon
     ToastrModule.forRoot({
       timeOut: 1000000,
       preventDuplicates: true,
-    }),
+    }), NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

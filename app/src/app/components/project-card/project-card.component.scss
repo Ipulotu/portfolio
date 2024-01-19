@@ -1,22 +1,37 @@
+.card{
+    width: 25rem;
+}
+
 .card-body{
     display: flex;
     flex-direction: column;
-    height: 550px;
+    // height: 550px;
     img{
         max-height: 250px;
     }
 
+
+
 }
 
+
+
+
 .carousel-item{
-    height: 250px;
-    
+    img {
+        width: auto;
+        height: 250px;
+        object-fit: cover;
+      }
 }
 
 .link-bnts{
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-
-
 }
+
+.wide{
+    width: 80vh;
+}
+

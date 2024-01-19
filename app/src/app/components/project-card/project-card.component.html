@@ -1,6 +1,6 @@
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <div id={{string}} class="carousel slide" data-bs-ride="carousel">
+<div id={{string}} class="card">
+    <div id="card-body" class="card-body">
+        <div  class="carousel slide" data-bs-ride="carousel">
 
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -25,12 +25,20 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <h5 class="card-title">{{project.name}}</h5>
-        <p class="card-text">{{project.summary}}</p>
+        <h5 class="card-title h3">{{project.name}}</h5>
+        <p class="card-text">{{summeryArray[0]}}
+        
+          <span class="ml-2" id="{{dotsId}}">...</span><span id="{{moreTextId}}">{{summeryArray[1]}}</span>
+        
+          <button type="button" class=" btn btn-outline-primary p-1"  id="{{btnTextId}}" >Read more</button>
+        </p>
+        
+        <!-- (click)="showText()" -->
+
         <div class="link-bnts">
           <a href={{project.liveUrl}} target="_blank" class="btn btn-primary">Live site</a>
           <div *ngIf="checkForGit()">
-            <a href={{project.gitUrl}} target="_blank" class="btn btn-primary">Code</a>
+              <a href={{project.gitUrl}} target="_blank" class="btn btn-primary">Code</a>
           </div>
         </div> 
     </div>

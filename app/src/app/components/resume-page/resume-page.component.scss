@@ -1,15 +1,26 @@
 @charset "UTF-8";
 
 .content {
-    display: flex;
-    margin: 56px auto 0px;
+    // display: flex;
+    margin: 0px auto 0px;
     padding-top: 9px;
     padding-bottom: 140px;
-    flex-direction: column;
-    align-items: center;
+    // flex-direction: column;
+    // align-items: center;
+    
     
 }
 
+* {
+  font-size: 1.5rem;
+}
+
+h1{
+   font-size: calc(1.725rem + 5.7vw)!important;
+  span{
+    font-size: calc(1.725rem + 5.7vw);
+  }
+}
 
 /*!
 * Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
@@ -10868,7 +10879,7 @@ h1, .h1 {
 }
 
 p.lead {
-  font-size: 1.15rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -10965,13 +10976,14 @@ section.resume-section {
   padding-bottom: 5rem;
   max-width: 75rem;
 }
+
 section.resume-section .resume-section-content {
   width: 100%;
 }
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+    min-height: 80vh;
   }
 }
 @media (min-width: 992px) {

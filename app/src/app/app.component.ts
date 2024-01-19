@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
@@ -7,18 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'app';
   year = (new Date).getFullYear();
   lastupdated = new Date(document.lastModified).toLocaleDateString("en-US");
-  currentTheme:string = localStorage.getItem("theme") || "empty";
+  isMenuCollapsed = true;
   
 
   constructor() { }
   
   
     ngOnInit(): void {
-    
     }
-
    
   }

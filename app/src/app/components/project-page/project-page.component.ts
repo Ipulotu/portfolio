@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Project } from '../../project'; 
+import { projectsList } from '../../../assets/Data/projects';
+import { NgbCarousel, NgbSlideEvent } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-project-page',
@@ -7,23 +9,33 @@ import { Project } from '../../project';
   styleUrls: ['./project-page.component.scss']
 })
 export class ProjectPageComponent implements OnInit {
-  projects!: Array<Project>; 
+  projects:  any;
 
+  @ViewChild('carousel', { static: true }) carousel: NgbCarousel | undefined;
   constructor() { }
 
   ngOnInit(): void {
-    this.getProjects()
-  }
-
-
-  async getProjects(){
-    let projects = [];
-    let data = await this.getJSON("https://ipulotu.github.io/portfolio/app/src/assets/Data/projects.json");  
-    for(let i = 0; i <= 4; i++){
-      projects.push(data[i])
+    // this.getProjects()
+    this.projects = projectsList();
+    console.log( this.projects);
+    if(this.carousel != undefined){
+      this.carousel.pause();
     }
-    this.projects = projects ;
   }
+
+  onSlide(slideEvent: NgbSlideEvent) {
+    if(this.carousel != undefined){
+      this.carousel.pause();
+    }
+	}
+  // async getProjects(){
+  //   let projects = [];
+  //   let data = await this.getJSON("https://ipulotu.github.io/portfolio/app/src/assets/Data/projects.json");  
+  //   for(let i = 0; i <= 4; i++){
+  //     projects.push(data[i])
+  //   }
+  //   this.projects = projects ;
+  // }
 
   getJSON(url: string) {
     return fetch(url)
